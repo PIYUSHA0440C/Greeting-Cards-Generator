@@ -21,7 +21,7 @@ const App = () => {
   const submitHandler = (e) => {
     e.preventDefault()
     const oldCards = [...allCards]
-    oldCards.push({ name, imageURL, greetMsg })
+    oldCards.push({ name, imageURL, greetMsg, event })
 
     setAllCards(oldCards)
     localStorage.setItem('all-cards', JSON.stringify(oldCards));
